@@ -1,0 +1,210 @@
+body{
+    margin:0;
+    text-align:center;
+    font-family: 'Merriweather', serif;
+    color:#40514E;
+    box-sizing: border-box;
+    
+}
+
+h1{
+    font-family: 'Sacramento', cursive;
+    font-size:5.625rem;
+    color:#66BFBF;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size:2.5rem;
+    color:#66BFBF;
+    font-weight:bold;
+    margin:0;
+}
+h3{
+    font-family: 'Montserrat', sans-serif;
+    color:#11999E
+}
+
+/* hr{
+    border: dotted;
+    width:4%;
+    color:grey;
+    opacity:50%;
+    size:100px;
+    border-bottom:none;
+    border-width: 5px;
+    margin: 100px auto;
+}*/
+
+
+/*hr{
+    color:grey;
+    border: dotted;
+    height:0%;
+    width: 5%;
+    border-width: 5px;
+    border-bottom:0;
+}*/
+
+a{
+    color:#11999E;
+}
+
+p{
+    color:#40514E;
+}
+
+/*******************************************Classes***************************************************/
+/* Navbar */
+
+.mobile-only{
+    display:none;
+}
+
+.navigation-bar{
+    background-color:#E4F9F5;
+}
+
+.navigation-bar-text{
+    color:#66BFBF;
+}
+.navigation-bar-text:hover{
+    color:#417a7a;
+
+}
+
+/* Top container items */
+
+
+
+.top-container{
+    background-color:#E4F9F5;
+    display:grid;
+    grid-template-rows: repeat(4, minmax(100px, 240px));
+    grid-template-columns: repeat(6, minmax(80px, 180px));
+    position:relative;
+    height:100vh;
+    overflow: hidden;
+    z-index: -2;
+}
+.mountain{
+    grid-area: 3 / 3 / 5 / 10;
+    margin-left:50px;
+}
+.top-cloud{
+    grid-area: 2 / 3 / 3 / 4;
+}
+.bottom-cloud{
+    grid-area: 4 / 8 / 5 / 10;
+}
+
+
+.bottom-container{
+    background-color:#66BFBF;
+    padding: 50px 0 20px;
+}
+
+.footer-link{
+    color: #11999e;
+    font-family:'Montserrat', sans-serif;
+    margin:10px 20px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s ease;
+}
+.footer-link:hover{
+    color:#EAF6F6
+}
+
+.copyright{
+    color:#EAF6F6;
+    font-size: 0.75em;
+    margin:50px 0 -10px 0;
+    padding:20px 0;
+}
+
+/* IDs */
+
+#james{
+    grid-area:1 / 4 / 3 / 7;
+    margin:2rem 0 0 0;
+}
+
+#whatiam{
+    grid-area: 2 / 4 / 6 / 7;
+    line-height:2;
+    z-index:1;
+}
+#getintouch{
+    color:#EAF6F6;
+}
+
+
+
+.btn{
+    margin:2.5rem 0;
+    color:white;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    text-decoration:none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:700;
+    padding: 10px 20px 10px 20px;
+    transition: 1sec ease;
+}
+
+ .btn:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #346363, #417a7a);
+    background-image: -moz-linear-gradient(top, #346363, #417a7a);
+    background-image: -ms-linear-gradient(top, #346363, #417a7a);
+    background-image: -o-linear-gradient(top, #346363, #417a7a);
+    background-image: linear-gradient(to bottom, #416868, #345a5a);
+    text-decoration: none;
+    color:white;
+    
+}
+
+@media screen and (max-width:1020px){
+    .top-cloud{
+        grid-area: 1 / 1 / 2 / 3;
+    }
+    #whatiam{
+        grid-area: 3 / 3 / 4 / 8;
+    }
+}
+
+@media screen and (max-width:550px){
+    #james{
+        grid-area: 1 / 2 / 3 / 5;
+    }
+    #whatiam{
+        grid-area: 3 / 1 / 4 / 6;
+    }
+    .bottom-cloud{
+        grid-area: 2 / 5 / 3 / 7;
+    }
+    .mobile-only{
+        display:block;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
